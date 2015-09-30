@@ -1,4 +1,8 @@
-Insertion Sort Method
+Insertion Sort
+
+This Repository has been REPURPOSED as a general data structures test repository
+
+#Sort, Insertion
 
 To test this method in a stand-alone enviornment run it using irb in your console.
 
@@ -10,3 +14,21 @@ example:
     sort( [12, 215, 233, 42, 16, 87, 2, 9] )
 
     returns:  [233, 215, 87, 42, 16, 12, 9, 2]
+
+
+#Linked List
+
+This has 2 classes:
+
+  Node Class, with "value," and "next" variables
+
+  List Class, with "head" variable
+    methods:
+
+    to_s: prints the entire list with the format (value) --> (value) --> (value) --> etc
+
+    insert(value): adds a new node to the head of the list with value
+
+    search(value): looks through the list and returns the positions of all nodes with that value or returns nil if there is none found with the specified values
+
+    remove(value): looks through each node and removes any with the specified value
