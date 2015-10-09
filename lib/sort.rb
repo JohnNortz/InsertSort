@@ -1,3 +1,5 @@
+require 'benchmark'
+
 def sort(array)
   (1..array.length-1).each do |i|
     extract = array[i]
@@ -15,4 +17,12 @@ def sort(array)
     end
   end
   puts array
+end
+
+n = 50000
+a = (0..n).to_a
+Benchmark.bm do |x|
+  x.report('Sorted') { merge_sort(a) }
+  x.report('Random') { merge_sort(a).reverse_each }
+  x.report('Reverse') { merge_sort(a).shuffle }
 end

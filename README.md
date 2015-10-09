@@ -32,3 +32,12 @@ This has 2 classes:
     search(value): looks through the list and returns the positions of all nodes with that value or returns nil if there is none found with the specified values
 
     remove(value): looks through each node and removes any with the specified value
+
+
+#Merge Sort
+
+   methods merge sort and merge work together to divide the array into smaller and smaller arrays then orders and recombines all elements back into a single array
+
+#Stack and Queue
+
+  Data Structure featuring Last-in, First-out and First-in, First-out respectively
