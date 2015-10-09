@@ -21,6 +21,7 @@ end
 
 n = 50000
 a = (0..n).to_a
+puts "\n\nInsertion Sorting...."
 Benchmark.bm do |x|
   x.report('Sorted') { merge_sort(a) }
   x.report('Random') { merge_sort(a).reverse_each }
